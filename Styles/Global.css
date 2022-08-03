@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     height: 100vh;
     counter-reset: chapter;
+    text-align: center;
 }
 header {
     background-image: linear-gradient(to right, #09311f 1%, #28be78) !important;
@@ -35,7 +36,7 @@ main ol.LinksContainer {
     overflow: hidden;
     transition: height ease-out 350ms, width ease-in 350ms;
 }
-main .HoverForLinks ol li.Links {
+main .HoverForLinks .Links {
     color: yellow;
     font-size: 1rem;
     font-variant: normal;
@@ -59,45 +60,38 @@ main .HoverForLinks ol li.Links {
     width: 200px;
     
 }
-main ol li.Chapters {
+main .Chapters {
     list-style-type: none;
     margin-top: 2rem;
 }
-main ol li h3 {
+main h3 {
     font-size: 1.75rem !important;
-}
-main ol li h3::before {
-    counter-increment: chapter;
-    content: counter(chapter) ". ";
-    color: yellow;
-    font-size: 1.2rem;
-    margin-right: 15px;
 }
 main ul li {
     list-style-type: circle;
     margin-bottom: 12px;
 }
-main ul li b {
+main b {
     color: yellow;
     font-variant: small-caps;
     font-size: 1.2rem;
 }
-main ul li span.label {
+main span.label {
     color: white;
     font-size: 0.95rem;
 }
-main section.container {
+main .container {
     margin-bottom: 2rem;
 }
-main section.container h2, h3{
+main .container h2, h3{
     color: yellow !important;
     font-weight: normal;
     font-variant: small-caps;
 }
-main section.container h3 {
+main .container h3 {
     font-size: 1.5rem;
 }
-main section.container p {
+main .container p {
     color: white;
     font-size: 1.25rem
 }
