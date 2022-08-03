@@ -1,0 +1,27 @@
+{
+  "name": "readingblogs",
+  "version": "1.0.0",
+  "description": "Summary of all book i have read",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkmkaksl/ReadingBlogs.git"
+  },
+  "keywords": [
+    "reading"
+  ],
+  "author": "Manoj Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkmkaksl/ReadingBlogs/issues"
+  },
+  "homepage": "https://github.com/mkmkaksl/ReadingBlogs#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "jquery": "^3.6.0",
+    "popper": "^1.0.1"
+  }
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+body {
+    background-image: linear-gradient(to right, #145e3b, #28be78) !important;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    counter-reset: chapter;
+}
+header {
+    background-image: linear-gradient(to right, #09311f 1%, #28be78) !important;
+    color: yellow;
+    font-variant: small-caps;
+}
+nav {
+    background-image: linear-gradient(to right, #09311f 1%, #28be78) !important;
+    display: flex !important;
+    justify-content: center;
+}
+nav .btn {
+    background: none !important;
+    border: none;
+    color: yellow !important;
+}
+nav .OnlyLink {
+    color: yellow !important;
+    text-decoration: none;
+}
+main a {
+    color: yellow !important;
+}
+main ol.LinksContainer {
+    list-style-type: none;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    transition: height ease-out 350ms, width ease-in 350ms;
+}
+main .HoverForLinks ol li.Links {
+    color: yellow;
+    font-size: 1rem;
+    font-variant: normal;
+    text-decoration: none;
+    border: none;
+}
+.HoverForLinks {
+    color: white;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.HoverForLinks:hover {
+    color: yellow;
+    text-decoration: none;
+    border-right: 2px solid yellow;
+    border-left: 2px solid yellow;
+}
+.HoverForLinks:hover > ol.LinksContainer {
+    height: 19rem;
+    width: 200px;
+    
+}
+main ol li.Chapters {
+    list-style-type: none;
+    margin-top: 2rem;
+}
+main ol li h3 {
+    font-size: 1.75rem !important;
+}
+main ol li h3::before {
+    counter-increment: chapter;
+    content: counter(chapter) ". ";
+    color: yellow;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+main ul li {
+    list-style-type: circle;
+    margin-bottom: 12px;
+}
+main ul li b {
+    color: yellow;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+}
+main ul li span.label {
+    color: white;
+    font-size: 0.95rem;
+}
+main section.container {
+    margin-bottom: 2rem;
+}
+main section.container h2, h3{
+    color: yellow !important;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+main section.container h3 {
+    font-size: 1.5rem;
+}
+main section.container p {
+    color: white;
+    font-size: 1.25rem
+}
+footer {
+    background-image: none;
+    color: yellow !important;
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: auto;
+}
+footer a {
+    color: yellow;
+    font-size: 1rem;
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgb(255, 255, 148);
+}
