@@ -16,6 +16,7 @@
       <h1>Books Summarized</h1>
       <h3>Providing summaries of books read by me</h3>
     </header>
+    <!--Fix the NAV dropdown button using bootstrap 5 standards-->
     <nav>
       <button type="button" class="btn btn-success">
         <a href="index.html" class="OnlyLink" >Home</a>
@@ -32,31 +33,228 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-8 offset-2">
-            <div class="carousel slide" id="summaryCarousel" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <h3 class="Chapters d-block w-100">Introduction: Why 1 million</h3>
-                  <p>A million dollar is a lot of money.</p>
-                </div>
-                <div class="carousel-item">
-                  <h3 class="Chapters d-block w-100">Chapter 1</h3>
-                </div>
-                <div class="carousel-item">
-                  <h3 class="Chapters d-block w-100">Chapter 2</h3>
-                </div>
-                <div class="carousel-item">
-                  <h3 class="Chapters d-block w-100">Chapter 3</h3>
+          <div class="col-12 col-sm-10 offset-sm-1">
+            <div class="accordion" id="chapterAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="intro">
+                  <button class="accordion-button" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#introBody" 
+                  aria-expanded="true" aria-controls="introBody">
+                    Introduction: <span class="capital"> Why $1,000,000?</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse show" id="introBody"
+                aria-labelledby="intro">
+                  <div class="accordion-body">
+                    <p>A million dollar is a lot of money(depending on perspective). It will take commitment, hard work, and a little sacrifice.
+                      <blockquote>
+                        "Anybody can do it, But Most people don't"<br>
+                        <cite>--How to turn a hundred dollars into a million dollars, vi</cite>
+                      </blockquote>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#summaryCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#summaryCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>            
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter1">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter1Body" 
+                  aria-expanded="false" aria-controls="chapter1Body">
+                    Chapter 1: <span class="capital"> Think like a Millionaire</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter1Body"
+                aria-labelledby="chapter1">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter2">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter2Body" 
+                  aria-expanded="false" aria-controls="chapter2Body">
+                    Chapter 2: <span class="capital"> Set Financial Goals</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter2Body"
+                aria-labelledby="chapter2">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter3">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter3Body" 
+                  aria-expanded="false" aria-controls="chapter3Body">
+                    Chapter 3: <span class="capital"> Make a Budget</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter3Body"
+                aria-labelledby="chapter3">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter4">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter4Body" 
+                  aria-expanded="false" aria-controls="chapter4Body">
+                    Chapter 4: <span class="capital"> Five ways to get Money</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter4Body"
+                aria-labelledby="chapter4">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter5">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter5Body" 
+                  aria-expanded="false" aria-controls="chapter5Body">
+                    Chapter 5: <span class="capital"> Get a Job!</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter5Body"
+                aria-labelledby="chapter5">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter6">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter6Body" 
+                  aria-expanded="false" aria-controls="chapter6Body">
+                    Chapter 6: <span class="capital"> Start a Business</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter6Body"
+                aria-labelledby="chapter6">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter7">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter7Body" 
+                  aria-expanded="false" aria-controls="chapter7Body">
+                    Chapter 7: <span class="capital"> Save, Save, Save</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter7Body"
+                aria-labelledby="chapter7">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter8">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter8Body" 
+                  aria-expanded="false" aria-controls="chapter8Body">
+                    Chapter 8: <span class="capital"> The power of compound interest</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter8Body"
+                aria-labelledby="chapter8">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter9">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter9Body" 
+                  aria-expanded="false" aria-controls="chapter9Body">
+                    Chapter 9: <span class="capital"> Investing</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter9Body"
+                aria-labelledby="chapter9">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chapter10">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#chapter10Body" 
+                  aria-expanded="false" aria-controls="chapter10Body">
+                    Chapter 10: <span class="capital"> How <span class="red">not</span> to become a Millionaire</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="chapter10Body"
+                aria-labelledby="chapter10">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="conclusion">
+                  <button class="accordion-button collapsed" 
+                  type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#conclusionBody" 
+                  aria-expanded="false" aria-controls="conclusionBody">
+                    Conclusion: <span class="capital"> Get Going!</span>
+                  </button>
+                </h2>
+
+                <div class="accordion-collapse collapse" id="conclusionBody"
+                aria-labelledby="conclusion">
+                  <div class="accordion-body">
+                    <!--Body content here-->
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -72,3 +270,12 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<!--
+  <p>A million dollar is a lot of money(depending on perspective). It will take commitment, hard work, and a little sacrifice.
+                    <blockquote>
+                      "Anybody can do it, But Most people don't"<br>
+                      <cite>--How to turn a hundred dollars into a million dollars, vi</cite>
+                    </blockquote>
+                  </p>
+-->

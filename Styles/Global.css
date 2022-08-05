@@ -92,7 +92,7 @@ main .container h3 {
     font-size: 1.5rem;
 }
 main .container p {
-    color: white;
+    /* color: white; */
     font-size: 1.25rem
 }
 footer {
