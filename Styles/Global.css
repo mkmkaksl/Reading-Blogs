@@ -1,4 +1,9 @@
 @charset "utf-8";
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
 body {
     background-image: linear-gradient(to right, #145e3b, #28be78) !important;
     display: flex;
@@ -11,6 +16,7 @@ header {
     background-image: linear-gradient(to right, #09311f 1%, #28be78) !important;
     color: yellow;
     font-variant: small-caps;
+    text-align: left;
 }
 nav {
     background-image: linear-gradient(to right, #09311f 1%, #28be78) !important;
@@ -25,6 +31,9 @@ nav .btn {
 nav .OnlyLink {
     color: yellow !important;
     text-decoration: none;
+}
+main {
+    margin-top: 100px;
 }
 main a {
     color: yellow !important;
@@ -95,6 +104,29 @@ main .container p {
     /* color: white; */
     font-size: 1.25rem
 }
+/*Accordion styles*/
+main .accordion-item {
+    background-color: inherit;
+    color: white;
+}
+main .accordion-item blockquote {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+main .accordion-item cite {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+main .accordion-item strong {
+    color: yellow;
+}
+main .accordion-item .accordion-button {
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+}
+
+/*Footer styles*/
 footer {
     background-image: none;
     color: yellow !important;
@@ -109,4 +141,9 @@ footer a {
 }
 footer a:hover {
     color: rgb(255, 255, 148);
+}
+
+/*Utility Classes */
+.capital {
+    text-transform: uppercase;
 }
