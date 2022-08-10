@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/mkmkaksl/ReadingBlogs#readme",
   "dependencies": {
+    "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.0.0",
     "jquery": "^3.6.0",
-    "popper": "^1.0.1"
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1"
   }
 }
