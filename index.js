@@ -10,7 +10,7 @@ $(document).ready(function() {
         bootstrapScript.setAttribute("src", "node_modules/bootstrap/dist/js/bootstrap.min.js")
     }
     const bootstrapCSS = document.getElementById("bootstrapCSS")
-    bootstrapCSS.setAttribute("src", "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css")
+    bootstrapCSS.setAttribute("href", "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css")
     bootstrapCSS.onerror = function() {
         bootstrapCSS.setAttribute("src", "node_modules/bootstrap/dist/css/bootstrap.min.css")
     }
