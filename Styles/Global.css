@@ -133,7 +133,10 @@ main .accordion-item .accordion-button {
     color: white;
     border: 2px solid white;
 }
-
+main .accordion-item li {
+    font-size: 1.3em;
+    list-style: none;
+}
 /*Footer styles*/
 footer {
     background-image: none;
@@ -154,4 +157,7 @@ footer a:hover {
 /*Utility Classes */
 .capital {
     text-transform: uppercase;
+}
+.small-caps {
+    font-variant: small-caps;
 }
