@@ -23,6 +23,9 @@ header a {
     text-decoration: none;
     color: yellow;
 }
+header a:hover {
+    color: yellow;
+}
 nav {
     background-image: linear-gradient(to right, #09311f 1%, #28be78);
     display: flex;
